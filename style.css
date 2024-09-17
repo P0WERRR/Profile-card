@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+    
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: #2e3034;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #2e3034;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;color: #333;
+    margin-bottom: 10px;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+}
+.media-buttons .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 20px;
+    background-color: #4070f4;
+    height: 34px;
+    width: 34px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    
+}
+.media-buttons .link:hover{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    
+}
+.resume {
+    margin-top: 25px;
+}
+.resume .btn{
+    background-color: #2e3034;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    color: white;
+    border-radius: 24px;
+    padding: 8px 24px;
+    transition: all 0.3s ease-in;
+}
+.resume .btn:hover{
+    background-color: #1d1f21;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 25px;
+
+
+
+}
+.resume .btn a{
+    text-decoration: none ;
+    color: #fff;
+}
